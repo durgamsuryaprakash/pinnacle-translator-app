@@ -72,6 +72,23 @@ python -m streamlit run app.py
 
 Streamlit will start a local server and open the app in your browser, by default at `http://localhost:8501`.
 
+## Testing
+
+The following checks were completed during development:
+
+- English to Telugu translation verified with the running app
+- Language swap verified
+- Translation history verified (entries added and cleared)
+- End-to-end flow passed with Streamlit's AppTest framework
+- All 6 unit tests passed
+- Streamlit server returned HTTP 200 on startup
+
+The unit tests cover the input validation logic without network calls. Run them with:
+
+```bash
+python -m unittest discover -s tests
+```
+
 ## Example Usage
 
 1. Select **English** as the source language and **Telugu** as the target language (this is the default pair).
@@ -105,4 +122,4 @@ This project is Task 3 of the Artificial Intelligence Internship at Pinnacle Lab
 
 ## Author
 
-Durgam Surya Prakash - [GitHub](https://github.com/durgamsuryaprakash)
+Surya Prakash - [GitHub](https://github.com/durgamsuryaprakash)
