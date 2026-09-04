@@ -1,0 +1,2 @@
+streamlit>=1.35,<2.0
+deep-translator>=1.11,<2.0
